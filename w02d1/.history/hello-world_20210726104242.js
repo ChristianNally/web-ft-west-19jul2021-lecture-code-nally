@@ -15,9 +15,9 @@ const sayGoodbye = (name) => {
 
 // make the functions exportable
 
-// module.exports = sayHello;
+module.exports = sayHello;
 
-module.exports = {
-  monkeyFuzz: sayHello,
-  sayGoodbye: sayGoodbye,
-}
+// module.exports = {
+//   monkeyFuzz: sayHello,
+// }
+

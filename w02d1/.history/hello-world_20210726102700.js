@@ -14,10 +14,6 @@ const sayGoodbye = (name) => {
 // console.log(sayHello('Production Development Environment!'));
 
 // make the functions exportable
-
-// module.exports = sayHello;
-
 module.exports = {
   monkeyFuzz: sayHello,
-  sayGoodbye: sayGoodbye,
 }

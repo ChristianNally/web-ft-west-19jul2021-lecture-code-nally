@@ -18,6 +18,7 @@ const sayGoodbye = (name) => {
 // module.exports = sayHello;
 
 module.exports = {
-  monkeyFuzz: sayHello,
+  sayHello: sayHello,
   sayGoodbye: sayGoodbye,
 }
+

@@ -16,7 +16,6 @@
   "author": "Christian Nally",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.3.4",
     "mocha": "^9.0.3"
   }
 }

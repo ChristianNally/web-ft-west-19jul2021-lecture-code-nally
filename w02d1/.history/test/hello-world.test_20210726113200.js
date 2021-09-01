@@ -3,19 +3,14 @@
 const functions = require('../hello-world');
 
 // const assert = require('assert');
-
-// const assert = require('chai').assert;
-
-const myChai = require('chai');
-const assert = myChai.assert;
-
+const assert = require('chai').assert;
 
 // write the mocha describe() and it() function calls that will implement the test(s)
 
 
 it('test sayHello', ()=>{
   const returnVal = functions.monkeyFuzz('Monkey!');
-  assert.equal(returnVal, 'Hello, Monkey!');
+  assert.equal(returnVal, 'Hello, Monkey###');
 });
 
 it('test sayGoodbye', ()=>{

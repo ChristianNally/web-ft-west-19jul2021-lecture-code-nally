@@ -5,19 +5,9 @@ const sayHello = (name) => {
   return output;
 };
 
-const sayGoodbye = (name) => {
-  let output = '';
-  output = `Goodbye, ${name}`;
-  return output;
-};
-
-// console.log(sayHello('Production Development Environment!'));
+console.log(sayHello('Production Development Environment!'));
 
 // make the functions exportable
-
-// module.exports = sayHello;
-
 module.exports = {
-  monkeyFuzz: sayHello,
-  sayGoodbye: sayGoodbye,
+  sayHello: sayHello
 }

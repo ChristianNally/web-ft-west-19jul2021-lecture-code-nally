@@ -7,17 +7,14 @@ const sayHello = (name) => {
 
 const sayGoodbye = (name) => {
   let output = '';
-  output = `Goodbye, ${name}`;
+  output = `Hello, ${name}`;
   return output;
 };
 
 // console.log(sayHello('Production Development Environment!'));
 
 // make the functions exportable
-
-// module.exports = sayHello;
-
 module.exports = {
   monkeyFuzz: sayHello,
-  sayGoodbye: sayGoodbye,
+  propertyName: 'property value'
 }
