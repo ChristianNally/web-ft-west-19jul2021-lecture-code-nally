@@ -16,7 +16,7 @@ returnPromise('one')
   })
   .then((data) => {
     console.log(data);
-    return returnRejectedPromise('four');
+    return returnPromise('four');
   })
   .then((data) => {
     console.log(data);

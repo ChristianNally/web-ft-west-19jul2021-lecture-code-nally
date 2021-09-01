@@ -18,6 +18,7 @@ returnPromise('one')
     console.log(data);
     return returnRejectedPromise('four');
   })
+  {}
   .then((data) => {
     console.log(data);
     return returnPromise('five');
@@ -26,10 +27,7 @@ returnPromise('one')
     console.log(data);
     return returnPromise('six');
   })
-  .then((data)=>{
-    console.log(data);
-  })
   .catch((err) => {
     // throw err;
     console.log(err);
-  });
+  })

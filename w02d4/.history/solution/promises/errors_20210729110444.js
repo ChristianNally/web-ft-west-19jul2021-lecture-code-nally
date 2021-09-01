@@ -26,9 +26,6 @@ returnPromise('one')
     console.log(data);
     return returnPromise('six');
   })
-  .then((data)=>{
-    console.log(data);
-  })
   .catch((err) => {
     // throw err;
     console.log(err);

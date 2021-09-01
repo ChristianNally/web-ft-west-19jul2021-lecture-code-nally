@@ -14,7 +14,4 @@ const promises = [promiseOne,  promiseTwo, promiseThree];
 Promise.race(promises)
   .then((data) => {
     console.log('we have a winner:',data);
-  })
-  .catch((err)=>{
-    console.log('error:',err);
   });

@@ -16,7 +16,7 @@ returnPromise('one')
   })
   .then((data) => {
     console.log(data);
-    return returnRejectedPromise('four');
+    return returnPromise('four');
   })
   .then((data) => {
     console.log(data);
@@ -28,8 +28,8 @@ returnPromise('one')
   })
   .then((data)=>{
     console.log(data);
-  })
-  .catch((err) => {
-    // throw err;
-    console.log(err);
   });
+  // .catch((err) => {
+  //   // throw err;
+  //   console.log(err);
+  // });

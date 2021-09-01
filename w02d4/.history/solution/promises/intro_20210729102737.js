@@ -5,6 +5,7 @@ const returnPromise = promiseGeneratorFunctions.returnPromise;
 const promise = returnPromise('first promise', 4444);
 console.log('promise:',promise);
 
+
 // Not the best way to do this
 
 // setTimeout(()=>{
@@ -17,13 +18,11 @@ console.log('promise:',promise);
 
 promise
   .then((data) => {
-    console.log('resolved!!:',data);
+    console.log(data);
     return 'another thing';
-  })
-  .then((data) => {
-    console.log("monkeyfuzz:",data);
   });
-
-
+//   .then((data) => {
+//     console.log("monkeyfuzz",data);
+//   });
 
   

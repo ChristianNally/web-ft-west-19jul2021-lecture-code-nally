@@ -28,8 +28,8 @@ returnPromise('one')
   })
   .then((data)=>{
     console.log(data);
-  })
-  .catch((err) => {
-    // throw err;
-    console.log(err);
   });
+  // .catch((err) => {
+  //   // throw err;
+  //   console.log(err);
+  // });

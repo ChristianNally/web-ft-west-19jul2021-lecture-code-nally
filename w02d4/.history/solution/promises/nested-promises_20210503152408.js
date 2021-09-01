@@ -20,4 +20,4 @@ returnPromise('one')
     console.log(data);
     return returnPromise('two');
   })
-  .then();
+  .then
