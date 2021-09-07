@@ -1,11 +1,11 @@
-# W08D01 - Unit & Integration Testing
+# W08 - Unit & Integration Testing
 
 ### To Do
-- [x] Tools for testing React
-- [x] Coverage Reports
-- [x] Add Features/Tests to our App
-- [x] `debug()` and `prettyDOM()`
-- [x] Mocking AJAX Requests and Functions
+- [] Tools for testing React
+- [] Add Features/Tests to our App
+- [] `debug()` and `prettyDOM()`
+- [] Mocking AJAX Requests and Functions
+- [] STRETCH: Coverage Reports
 
 ### Setup & Teardown
 - Tests should represent how a user (or other code) would interact with our application
@@ -50,17 +50,6 @@ yarn script-name --flag-name
 
 - Eg. to pass "-la" to our `list` script, we'd use `npm run list -- -la` or `yarn list -la` (try it yourself!)
 
-### Coverage Reports
-- A coverage report shows us how much of our code is covered by the tests we've written
-- The code coverage of our tests is important, but it's more important to have solid tests with a little less coverage than easy tests with a lot of coverage
-- It's okay to not have 100% coverage, it's almost impossible!
-- `npm run test -- --coverage` will start Jest in watch mode and show the coverage status after each test
-- If you notice that your coverage report is empty, add the `watchAll=false` flag
-
-```bash
-npm run test -- --coverage --watchAll=false
-```
-
 ### Add Features/Tests to App
 - TDD: unit test
   - choose a valid response for the computer player (currently hard-coded)
@@ -96,3 +85,15 @@ Notes and example app based on [Francis' lecture](https://github.com/FrancisBour
 * [Jest-DOM](https://github.com/testing-library/jest-dom)
 * [Testing Library Async Functions](https://testing-library.com/docs/dom-testing-library/api-async)
 * [Jest --coverage issue](https://github.com/facebook/jest/issues/9723)
+
+### STRETCH: Coverage Reports
+- A coverage report shows us how much of our code is covered by the tests we've written
+- The code coverage of our tests is important, but it's more important to have solid tests with a little less coverage than easy tests with a lot of coverage
+- It's okay to not have 100% coverage, it's almost impossible!
+- `npm run test -- --coverage` will start Jest in watch mode and show the coverage status after each test
+- If you notice that your coverage report is empty, add the `watchAll=false` flag
+
+
+```bash
+npm test -- --verbose --coverage --watchAll=false
+```
